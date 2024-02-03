@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log-In</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="form">
+      <h1>Login</h1>
+      <form action="#">
+        <div class="small-container">
+          <label for="Username">Username</label>
+          <input type="text" id="Username" placeholder=" Type your username" />
+        </div>
+        <div class="small-container">
+          <label for="password">Password</label>
+          <input
+            type="password" id="password" placeholder=" Type your password" 
+          />
+        </div>
+        <p id="forget">Forget password?</p>
+      </form>
+      <div class="btn">
+        <button onclick="newfile()">LOGIN</button>
+      </div>
+    </div>
+    <script>
+     function newfile()
+     {
+      window.open('landing.html');
+     }
+    </script>
+  </body>
+</html>

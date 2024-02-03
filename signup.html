@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>REGISTER</h1>
+      <form action="#" >
+        <div class="form">
+          <!-- <div id="input"> -->
+            <input type="text" id="firstName" placeholder="First Name" />
+            <input type="text" id="lastName"  placeholder="Last Name" />
+          <!-- </div> -->
+
+          <input type="email" id="email" placeholder="Email"/>
+          <input type="number" id="age" placeholder="Age" />
+          <input type="text" id="username" placeholder="Username" />
+          <input type="password" id="password" placeholder="Password" />
+          
+        </div>
+        <button onclick="validateForm()" id="btn">Submit</button>
+      </form>
+    </div>
+    <script>
+
+      function validateForm()
+      {
+        let firstNameElement = document.querySelector("#firstName").value;
+      let lastNameElement = document.querySelector("#lastName").value;
+      let emailElement = document.querySelector("#email").value;
+      let ageElement = document.querySelector("#age").value;
+      let usernameElement = document.querySelector("#username").value;
+      let passwordElement = document.querySelector("#password").value;
+
+       
+        if(firstNameElement === "")
+        {
+          alert("First Name Can't Be Blank");  
+        }
+        else if(emailElement === "" || emailElement === undefined)
+        {
+          alert("Email Can't Be Blank");  
+        }
+        // else if(ageElement.length <= 4)
+        // {
+        //   alert("Age must be Greater Than 4");  
+        // }
+        else if(usernameElement === "")
+        {
+          alert("Userame Can't Be Blank");  
+        }
+        else if(passwordElement.length <= 8)
+        {
+          alert("Password must be Greater Than 8");  
+        }
+        else
+        {
+          
+            window.open('landing.html');
+         
+        }
+
+      }
+     
+    </script>
+  </body>
+</html>

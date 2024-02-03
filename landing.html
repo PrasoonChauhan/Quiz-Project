@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="landing.css">
+   
+</head>
+<body>
+    <h1 id="heading">QUIZZARD</h1>
+    <div class="container">
+        <div class="folder  removeGs" id="gs" onclick="openGsFile()">
+            <img src="general-knowledge-quiz.webp">
+            <h1>General Knowledge</h1>
+        </div>
+        <div class="folder removeScience" id="science" onclick="openScienceFile()">
+            <img src="science quiz.webp" id="science-img">
+            <h1>Science</h1>
+        </div>
+        <div class="folder removeHistory" id="history" onclick="openHistoryFile()">
+            <img src="history.png" id="history-img">
+            <h1>History</h1>
+        </div>
+        <div class="folder removeSport" id="sport" onclick="openSportsFile()">
+            <img src="sport.jpg">
+            <h1>Sports</h1>
+        </div>
+    </div>
+    <script>
+        let gsElement = document.querySelector("#gs");
+        let scienceElement = document.querySelector("#science");
+        let historyElement = document.querySelector("#history");
+        let sportElement = document.querySelector("#sport");
+        window.addEventListener("load",function(){
+            // alert("Registration is Done");
+           gsElement.classList.remove("removeGs");
+           scienceElement.classList.remove("removeScience");
+           historyElement.classList.remove("removeHistory");
+           sportElement.classList.remove("removeSport");
+        })
+         function openGsFile()
+         {
+            window.open("quiz-1.html");
+         }
+         function openScienceFile()
+         {
+            window.open("quiz-2.html");
+         }
+         function openHistoryFile()
+         {
+            window.open("quiz-3.html");
+         }
+         function openSportsFile()
+         {
+            window.open("quiz-4.html");
+         }
+    </script>
+</body>
+</html>

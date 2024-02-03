@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(/vivid-blurred-colorful-background.jpg);
+  background-size: cover;
+  font-family: "Courier New", Courier, monospace;
+}
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+.form {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 25vw;
+  /* height: 65vh; */
+  padding: 40px;
+  margin: auto;
+  margin-top: 100px;
+  border: 3px solid black;
+  border-radius: 5px;
+  box-shadow: 20px 20px 15px 2px rgba(128, 128, 128),
+    20px 20px 15px 2px rgba(128, 128, 128),
+    20px 20px 15px 2px rgba(128, 128, 128);
+}
+input {
+  border: none;
+  border-bottom: 1px solid grey;
+  font-size: larger;
+  outline: none;
+  padding: 0.5rem;
+  height: 1.5rem;
+}
+
+.small-container p {
+  font-size: xx-large;
+}
+.small-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 30px;
+}
+#forget {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 600;
+  font-size: large;
+}
+form label {
+  font-size: large;
+}
+
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+button {
+  height: 30px;
+  width: 500px;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: large;
+  border: none;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    aquamarine,
+    rgb(28, 5, 113),
+    rgb(145, 15, 155)
+  );
+}
+button:hover {
+  transform: scale(1.1);
+  transition: all 3ms;
+  background-image: linear-gradient(
+    to left,
+    aquamarine,
+    rgb(28, 5, 113),
+    rgb(145, 15, 155)
+  );
+  cursor: pointer;
+}
+@media screen and (max-width: 850px) {
+  
+  html {
+    font-size: 50%;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .form {
+    padding: 20px;
+    max-width: 50vw;
+    margin: auto;
+    margin-top: 180px;
+    /* height: 55vh; */
+    box-shadow: 10px 10px 8px 1px rgba(128, 128, 128),
+    10px 10px 8px  1px rgba(128, 128, 128),
+    10px 10px 8px 1px rgba(128, 128, 128);
+  }
+  form label {
+    font-size:medium;
+  }
+  input {
+   
+    font-size: 1.4rem;
+    
+  }
+  .btn {
+    margin-top: 20px;
+  }
+  #forget {
+    
+    font-size: 1.5rem;
+  }
+}
